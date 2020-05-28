@@ -32,14 +32,18 @@ export default class Nav extends Component {
         }
     }
     render() {
+        let brand;
+        if ('img' in this.props.brand) {
+            brand = <div className="nav-logo">
+                <img src={'/public/' + this.props.brand['img']}/>
+            </div>
+        }
         return (
             <header>
                 <nav className="fixed-nav navbar">
                     <div id="nav-container" className="container">
                         <Link to='/' onClick={this.navigate} className="mr-auto navbrand" style={('style' in this.props.brand ? this.props.brand['style'] : {})}>
-                            <div className="nav-logo">
-                                <img src={'/public/zest.svg'}/>
-                            </div>
+                            {brand}
                             <span className="nav-title">{('title' in this.props.brand ? this.props.brand['title'] : '')}</span>
                         </Link>
                         <button onClick={this.toggleShow} className="nav-toggler" type="button">

@@ -1,0 +1,7 @@
+.glossary {
+    white-space: pre-wrap;
+}
+.glossary-link:hover {
+    cursor: pointer;
+    background-color:var(--secondary);
+}

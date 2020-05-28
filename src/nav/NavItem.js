@@ -31,7 +31,7 @@ export default function NavItem(props) {
     } else {
         item = <Switch>
                 <Route path={'/' + props.info['pathname']} render={() => (
-                    <Link onClick={props.navigate} to={'/' + props.info['pathname']} className={'nav-link ' + (props.info['pathname'] === 'zest' && window.location.pathname !== '/zest' ? '' : 'active')}>{props.info['name']}</Link>
+                    <Link onClick={props.navigate} to={'/' + props.info['pathname']} className={'nav-link ' + (props.info['pathname'] === '' && window.location.pathname !== '/' ? '' : 'active')}>{props.info['name']}</Link>
                 )}/>
                 <Route render={() => (
                     <Link onClick={props.navigate} to={'/' + props.info['pathname']} className='nav-link'>{props.info['name']}</Link>

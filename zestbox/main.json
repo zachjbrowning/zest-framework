@@ -1,7 +1,10 @@
 {
     "brand" : {
         "title" : "ZEST",
-        "img" : "zest.svg"
+        "img" : "zest.svg",
+        "style" : {
+            "color" : "var(--primary)"
+        }
     },
     "footer" : {
         "note" : ["Developed using the ZEST framework"]

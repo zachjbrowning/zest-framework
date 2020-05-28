@@ -14,7 +14,7 @@ export default class Page extends Component {
         const options = {
             method: 'GET',
         }
-        fetch('/zestbox/' + this.props.file, options).then(response => response.json()).then(json => this.setState({info: json}))
+        fetch('/zestbox/' + this.props.file, options).then(response => {if (!response.ok) {throw new Error("Couldn't retrieve " + this.props.file + ". Check main.json has the current path to the file!!!")} return response.json()}).then(json => this.setState({info: json}))
         
     }
     render() {

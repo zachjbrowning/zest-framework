@@ -1,11 +1,11 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Page from './page/Page'
-
+import PageSwitchboard from '../../rind/PageSwitchboard'
+import '../../rind/rind.css'
 
 
 export default function SwitchBoard(props) {
-    //NEED TO GO THROUGH each path and it's subpaths
     var mapper = {}
     props.paths.map((item) => {
         if ('filename' in item) {
@@ -21,9 +21,14 @@ export default function SwitchBoard(props) {
         }
         order.push(key);
     })
+
+
+    let page_rind = PageSwitchboard() 
+
+
     return (
         <Switch>
-            
+            {page_rind}
             {order.map((path, index) => {
                 if (path === '/') {
                     return (<Route key={index} exact path={path} render={() => <Page file={mapper[path]}/>}/>)
