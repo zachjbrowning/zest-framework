@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+:root {
+    --purple:#6f42c1;
+    --orange:#E65c20;
+}
+html, body, #root {
+    font-family: 'Montserrat', sans-serif;
+    height:100%;
+    background-color:#d3d3d3;;
+}
+.base-frame {
+    height:100%;
+    flex-wrap:wrap;
+}
+.base-frame, .logo-holder, .title-frame {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-frame, .logo-holder {
+    flex-basis:100%;
+    font-size:40px;
+    color:var(--purple);
+}
+.logo-holder {
+    height:40;
+    padding-bottom:20%;
+}
+#logo {
+    width:80px;
+    stroke:var(--orange);
+    fill:none;
+    stroke-width: 50;
+    animation: rotate 8s infinite linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359.999deg);
+    }
+}
