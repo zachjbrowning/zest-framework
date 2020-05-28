@@ -1,43 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-:root {
-    --purple:#6f42c1;
-    --orange:#E65c20;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700');
+@import './rules.css';
+html {
+    -webkit-text-size-adjust: 100%;
 }
 html, body, #root {
     font-family: 'Montserrat', sans-serif;
     height:100%;
-    background-color:#d3d3d3;;
+    margin:0;
+    background-color:var(--backdrop);
 }
-.base-frame {
-    height:100%;
-    flex-wrap:wrap;
+main {
+    padding-top:70px;
+    min-height:80vh;
 }
-.base-frame, .logo-holder, .title-frame {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.parsed-link {
+    opacity: 60%;
 }
-.title-frame, .logo-holder {
-    flex-basis:100%;
-    font-size:40px;
-    color:var(--purple);
+.parsed-link:hover {
+    opacity:100%;
 }
-.logo-holder {
-    height:40;
-    padding-bottom:20%;
+.top-hat {
+    padding-top:20px;
 }
-#logo {
-    width:80px;
-    stroke:var(--orange);
-    fill:none;
-    stroke-width: 50;
-    animation: rotate 8s infinite linear;
-}
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359.999deg);
-    }
+.bottom-hat {
+    padding-bottom:20px;
 }

@@ -1,0 +1,23 @@
+{
+    "brand" : {
+        "title" : "ZEST",
+        "img" : "zest.svg"
+    },
+    "footer" : {
+        "note" : ["Developed using the ZEST framework"]
+    },
+    "colors" : {
+        "primary"   : "#d48301",
+        "secondary" : "#e6b120",
+        "tertiary"  : "#80a521",
+        "quaternary" : "#7a7932",
+        "backdrop"  : "#ffffff"
+    },
+    "paths" : [
+        {
+            "pathname" : "",
+            "filename" : "pages/home.json",
+            "name" : "Home"
+        }
+    ]
+}

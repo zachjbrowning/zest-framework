@@ -1,0 +1,11 @@
+{
+    "title" : "Zest startup",
+    "sections" : [
+        {
+            "layout" : 1,
+            "first" : {
+                "text" : ["Welcome to the Zest framework! Start working inside main.json to get going!"]
+            }
+        }
+    ]
+}
