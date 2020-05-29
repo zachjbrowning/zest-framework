@@ -20,6 +20,9 @@ export default function Layout(props) {
         third = <Block block={props.section['third']}/>
         no++
     }
+    if (props.layout) {
+        no = props.layout
+    }
     
     
     
@@ -30,8 +33,8 @@ export default function Layout(props) {
                 {'header-text' in props.section ? <SubHeader header={props.section['header-text']} style={props.section['header-style']}/> : ''}
                 <div className={"block-" + no}>
                     {first}
-                    {second}
-                    {third}
+                    {(no > 1 ? second : '')}
+                    {(no > 2 ? third : '')}
                 </div>
             </div>
         </div>

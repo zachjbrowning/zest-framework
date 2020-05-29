@@ -8,10 +8,14 @@ import SectionSwitchboard from '../../../rind/SectionSwitchboard'
 export default function Section(props) {
     
     let section_rind = SectionSwitchboard(props.section)
+    let layout;
+    if ('layout' in props.section) {
+        layout = props.section['layout']
+    }
     if (section_rind) {
         return section_rind
-    } else if ("first" in props.section || props.section['layout'] == 1 || props.section['layout'] == 2 || props.section['layout'] == 3) {
-        return <Layout section={props.section}/>
+    } else if ("first" in props.section || layout == 1 || layout == 2 || layout == 3) {
+        return <Layout section={props.section} layout={layout}/>
     } else {
         return null
     }

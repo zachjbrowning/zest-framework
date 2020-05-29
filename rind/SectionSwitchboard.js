@@ -12,9 +12,16 @@ To add new sections:
 */
 
 export default function SectionSwitchboard(section) {
+    let layout;
+    if ('layout' in section) {
+        layout = section['layout']
+    } else {
+        return null
+    }
     
-    
-    if (section['layout'] == -1) {
+
+    /* ADD AN IF STATEMENT HERE*/
+    if (layout == -1) {
         return <Glossary section={section}/>
     } else {
         return null
