@@ -1,0 +1,150 @@
+.dev-holder, .widen, .dev-options {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.dev-holder {
+    margin-bottom:20px;
+}
+button {
+    display:flex;
+    align-items: center;
+}
+.dev-holder > div, .dev-holder > button {
+    flex-basis:100%;
+    flex-grow:1;
+}
+.preview {
+    background-color:var(--backdrop);                     
+}
+.header-collapse, .header-adder {
+    color:white;
+    cursor:pointer;
+    padding:20px;
+    outline:none;
+    border:none;
+    margin:0;
+    font-size:20px;
+}
+.header-collapse {
+    text-align:left;
+    background-color:var(--secondary-fade);
+}
+.header-adder {
+    background-color:var(--primary-fade);
+    justify-content:center;
+}
+.header-adder.copy-it {
+    background-color:var(--tertiary-fade);
+}
+.header-adder.copy-it:hover {
+    background-color:var(--tertiary);
+}
+.header-adder:hover {
+    background-color: var(--primary);
+}
+.header-collapse:after {
+    content:'+';
+    font-size:30px;
+    color:#ffffffcc;
+    float:right;
+    outline:none;
+    margin-left:auto;
+}
+.header-collapse.dev-open:after {
+    content:'−';
+}
+.header-collapse:hover, .header-collapse:hover:after {
+    background-color: var(--secondary);
+    color:white;
+}
+.dev-dev {
+    background-color:var(--secondary-fade);
+    overflow:hidden;
+    max-height:0;
+    transition:max-height 300ms ease-out;
+}
+.generate.dev-dev {
+    background-color: var(--primary-fade);
+}
+.dev-open {
+    background-color:var(--secondary);
+}
+#generate-preview.dev-open {
+    background-color: var(--primary);
+}
+.preview {
+    margin-bottom: 30px;
+}
+.generate-preview {
+    background-color:var(--primary-fade);
+}
+.dev-add-form, .dev-el-form, .dev-el-form-form {
+    display:flex;
+    justify-content:center;
+    flex-basis:100%;
+    flex-grow:1;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.dev-el-form {
+    justify-content: left;
+    flex-wrap:wrap;
+    background-color: var(--secondary);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.dev-el-form-form {
+    flex-wrap:nowrap;
+}
+.dev-el-form-form > input {
+    width:100%;
+}
+.dev-el-header {
+    color:white;
+    font-size:20px;
+    width:100%;
+    flex-grow:1;
+    flex-basis:100%;
+    padding:5px;   
+    background-color: var(--secondary);
+}
+.dev-add-form select, .dev-add-form option, .dev-el-form input {
+    width:100%;
+    border:none;
+    -webkit-appearance: none;
+    background-color:var(--backdrop-fade);
+}
+.dev-add-form select, .dev-add-form option {
+    cursor: pointer;
+}
+.dev-add-button {
+    background-color:var(--secondary);
+    color:white;
+    cursor:pointer;
+    padding:10px;
+    outline:none;
+    border:none;
+    margin:0;
+    font-size:20px;
+    width:46.66666px;
+    display:flex;
+    justify-content: center;
+}
+.dev-add-form option {
+    background-color:var(--backdrop-fade);
+}
+.dev-el-form-form input {
+    padding-left:5px;
+    padding-right:5px;
+}
+.dev-el-del {
+    background-color:var(--secondary);
+    margin-bottom:10px;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    color:white;
+    cursor: pointer;
+}

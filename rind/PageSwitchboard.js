@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-
+import LiveReload from './page-rind/LiveReload'
 /*
 To add new pages:
 - import your new Component above
@@ -9,5 +9,6 @@ To add new pages:
 */
 export default function PageSwitchboard() {
     return [
+        <Route key='live' exact path='/live-reload' component={LiveReload}/>
     ]
 }

@@ -5,6 +5,7 @@ module.exports = {
     entry: './src/index.js',
     devServer: {
         historyApiFallback: true,
+        port: 9000
     },
     optimization: {
       runtimeChunk: {

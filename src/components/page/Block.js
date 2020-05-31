@@ -9,7 +9,7 @@ export default function Block(props) {
         stuff = parser(props.block['text']);
     } else if ('img' in props.block) {
         stuff = <div className="img-holder">
-                <img className="img" src={'/zest/public/' + props.block['img'][0]} alt="Image couldn't be loaded"/>
+                <img className="img" src={'/public/' + props.block['img'][0]} alt="Image couldn't be loaded"/>
                 {props.block['img'].length > 1 ? <div className="img-text" >{props.block['img'][1]}</div> : ''}
             </div>
     }

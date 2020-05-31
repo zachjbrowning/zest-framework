@@ -21,6 +21,10 @@
             "pathname" : "",
             "filename" : "pages/home.json",
             "name" : "Home"
+        },
+        {
+            "pathname" : "live-reload",
+            "name" : "Live Reload"
         }
     ]
 }

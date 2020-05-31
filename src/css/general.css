@@ -11,7 +11,7 @@ html, body, #root {
 }
 main {
     padding-top:70px;
-    min-height:80vh;
+    min-height:90vh;
 }
 .parsed-link {
     opacity: 60%;
